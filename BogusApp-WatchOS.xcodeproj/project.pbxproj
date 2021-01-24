@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A68152C25BD9B5A00A9063D /* BogusApp-WatchOS WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7A68152B25BD9B5A00A9063D /* BogusApp-WatchOS WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7A68153225BD9B5A00A9063D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A68153025BD9B5A00A9063D /* Interface.storyboard */; };
+		7A68153425BD9B5B00A9063D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A68153325BD9B5B00A9063D /* Assets.xcassets */; };
+		7A68153B25BD9B5B00A9063D /* BogusApp-WatchOS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7A68153A25BD9B5B00A9063D /* BogusApp-WatchOS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7A68154025BD9B5B00A9063D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A68153F25BD9B5B00A9063D /* InterfaceController.swift */; };
+		7A68154225BD9B5B00A9063D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A68154125BD9B5B00A9063D /* ExtensionDelegate.swift */; };
+		7A68154425BD9B5B00A9063D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A68154325BD9B5B00A9063D /* NotificationController.swift */; };
+		7A68154625BD9B5B00A9063D /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A68154525BD9B5B00A9063D /* ComplicationController.swift */; };
+		7A68154825BD9B5C00A9063D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A68154725BD9B5C00A9063D /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A68152D25BD9B5A00A9063D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A68152125BD9B5A00A9063D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A68152A25BD9B5A00A9063D;
+			remoteInfo = "BogusApp-WatchOS WatchKit App";
+		};
+		7A68153C25BD9B5B00A9063D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A68152125BD9B5A00A9063D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A68153925BD9B5B00A9063D;
+			remoteInfo = "BogusApp-WatchOS WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7A68155025BD9B5C00A9063D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7A68153B25BD9B5B00A9063D /* BogusApp-WatchOS WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A68155425BD9B5C00A9063D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7A68152C25BD9B5A00A9063D /* BogusApp-WatchOS WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7A68152725BD9B5A00A9063D /* BogusApp-WatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BogusApp-WatchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A68152B25BD9B5A00A9063D /* BogusApp-WatchOS WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BogusApp-WatchOS WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A68153125BD9B5A00A9063D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7A68153325BD9B5B00A9063D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A68153525BD9B5B00A9063D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A68153A25BD9B5B00A9063D /* BogusApp-WatchOS WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BogusApp-WatchOS WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A68153F25BD9B5B00A9063D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		7A68154125BD9B5B00A9063D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		7A68154325BD9B5B00A9063D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		7A68154525BD9B5B00A9063D /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		7A68154725BD9B5C00A9063D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A68154925BD9B5C00A9063D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A68154A25BD9B5C00A9063D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A68153725BD9B5B00A9063D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A68152025BD9B5A00A9063D = {
+			isa = PBXGroup;
+			children = (
+				7A68152F25BD9B5A00A9063D /* BogusApp-WatchOS WatchKit App */,
+				7A68153E25BD9B5B00A9063D /* BogusApp-WatchOS WatchKit Extension */,
+				7A68152825BD9B5A00A9063D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7A68152825BD9B5A00A9063D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A68152725BD9B5A00A9063D /* BogusApp-WatchOS.app */,
+				7A68152B25BD9B5A00A9063D /* BogusApp-WatchOS WatchKit App.app */,
+				7A68153A25BD9B5B00A9063D /* BogusApp-WatchOS WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A68152F25BD9B5A00A9063D /* BogusApp-WatchOS WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				7A68153025BD9B5A00A9063D /* Interface.storyboard */,
+				7A68153325BD9B5B00A9063D /* Assets.xcassets */,
+				7A68153525BD9B5B00A9063D /* Info.plist */,
+			);
+			path = "BogusApp-WatchOS WatchKit App";
+			sourceTree = "<group>";
+		};
+		7A68153E25BD9B5B00A9063D /* BogusApp-WatchOS WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7A68153F25BD9B5B00A9063D /* InterfaceController.swift */,
+				7A68154125BD9B5B00A9063D /* ExtensionDelegate.swift */,
+				7A68154325BD9B5B00A9063D /* NotificationController.swift */,
+				7A68154525BD9B5B00A9063D /* ComplicationController.swift */,
+				7A68154725BD9B5C00A9063D /* Assets.xcassets */,
+				7A68154925BD9B5C00A9063D /* Info.plist */,
+				7A68154A25BD9B5C00A9063D /* PushNotificationPayload.apns */,
+			);
+			path = "BogusApp-WatchOS WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A68152625BD9B5A00A9063D /* BogusApp-WatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A68155525BD9B5C00A9063D /* Build configuration list for PBXNativeTarget "BogusApp-WatchOS" */;
+			buildPhases = (
+				7A68152525BD9B5A00A9063D /* Resources */,
+				7A68155425BD9B5C00A9063D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A68152E25BD9B5A00A9063D /* PBXTargetDependency */,
+			);
+			name = "BogusApp-WatchOS";
+			productName = "BogusApp-WatchOS";
+			productReference = 7A68152725BD9B5A00A9063D /* BogusApp-WatchOS.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		7A68152A25BD9B5A00A9063D /* BogusApp-WatchOS WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A68155125BD9B5C00A9063D /* Build configuration list for PBXNativeTarget "BogusApp-WatchOS WatchKit App" */;
+			buildPhases = (
+				7A68152925BD9B5A00A9063D /* Resources */,
+				7A68155025BD9B5C00A9063D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A68153D25BD9B5B00A9063D /* PBXTargetDependency */,
+			);
+			name = "BogusApp-WatchOS WatchKit App";
+			productName = "BogusApp-WatchOS WatchKit App";
+			productReference = 7A68152B25BD9B5A00A9063D /* BogusApp-WatchOS WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7A68153925BD9B5B00A9063D /* BogusApp-WatchOS WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A68154D25BD9B5C00A9063D /* Build configuration list for PBXNativeTarget "BogusApp-WatchOS WatchKit Extension" */;
+			buildPhases = (
+				7A68153625BD9B5B00A9063D /* Sources */,
+				7A68153725BD9B5B00A9063D /* Frameworks */,
+				7A68153825BD9B5B00A9063D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BogusApp-WatchOS WatchKit Extension";
+			productName = "BogusApp-WatchOS WatchKit Extension";
+			productReference = 7A68153A25BD9B5B00A9063D /* BogusApp-WatchOS WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A68152125BD9B5A00A9063D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					7A68152625BD9B5A00A9063D = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					7A68152A25BD9B5A00A9063D = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					7A68153925BD9B5B00A9063D = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 7A68152425BD9B5A00A9063D /* Build configuration list for PBXProject "BogusApp-WatchOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A68152025BD9B5A00A9063D;
+			productRefGroup = 7A68152825BD9B5A00A9063D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A68152625BD9B5A00A9063D /* BogusApp-WatchOS */,
+				7A68152A25BD9B5A00A9063D /* BogusApp-WatchOS WatchKit App */,
+				7A68153925BD9B5B00A9063D /* BogusApp-WatchOS WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A68152525BD9B5A00A9063D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A68152925BD9B5A00A9063D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A68153425BD9B5B00A9063D /* Assets.xcassets in Resources */,
+				7A68153225BD9B5A00A9063D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A68153825BD9B5B00A9063D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A68154825BD9B5C00A9063D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A68153625BD9B5B00A9063D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A68154425BD9B5B00A9063D /* NotificationController.swift in Sources */,
+				7A68154625BD9B5B00A9063D /* ComplicationController.swift in Sources */,
+				7A68154225BD9B5B00A9063D /* ExtensionDelegate.swift in Sources */,
+				7A68154025BD9B5B00A9063D /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A68152E25BD9B5A00A9063D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A68152A25BD9B5A00A9063D /* BogusApp-WatchOS WatchKit App */;
+			targetProxy = 7A68152D25BD9B5A00A9063D /* PBXContainerItemProxy */;
+		};
+		7A68153D25BD9B5B00A9063D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A68153925BD9B5B00A9063D /* BogusApp-WatchOS WatchKit Extension */;
+			targetProxy = 7A68153C25BD9B5B00A9063D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7A68153025BD9B5A00A9063D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A68153125BD9B5A00A9063D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A68154B25BD9B5C00A9063D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7A68154C25BD9B5C00A9063D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A68154E25BD9B5C00A9063D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2S2RSVRNML;
+				INFOPLIST_FILE = "BogusApp-WatchOS WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ro.iliemarius.BogusApp-WatchOS.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		7A68154F25BD9B5C00A9063D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2S2RSVRNML;
+				INFOPLIST_FILE = "BogusApp-WatchOS WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ro.iliemarius.BogusApp-WatchOS.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		7A68155225BD9B5C00A9063D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2S2RSVRNML;
+				IBSC_MODULE = BogusApp_WatchOS_WatchKit_Extension;
+				INFOPLIST_FILE = "BogusApp-WatchOS WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "ro.iliemarius.BogusApp-WatchOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		7A68155325BD9B5C00A9063D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2S2RSVRNML;
+				IBSC_MODULE = BogusApp_WatchOS_WatchKit_Extension;
+				INFOPLIST_FILE = "BogusApp-WatchOS WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "ro.iliemarius.BogusApp-WatchOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		7A68155625BD9B5C00A9063D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2S2RSVRNML;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ro.iliemarius.BogusApp-WatchOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7A68155725BD9B5C00A9063D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2S2RSVRNML;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ro.iliemarius.BogusApp-WatchOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A68152425BD9B5A00A9063D /* Build configuration list for PBXProject "BogusApp-WatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A68154B25BD9B5C00A9063D /* Debug */,
+				7A68154C25BD9B5C00A9063D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A68154D25BD9B5C00A9063D /* Build configuration list for PBXNativeTarget "BogusApp-WatchOS WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A68154E25BD9B5C00A9063D /* Debug */,
+				7A68154F25BD9B5C00A9063D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A68155125BD9B5C00A9063D /* Build configuration list for PBXNativeTarget "BogusApp-WatchOS WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A68155225BD9B5C00A9063D /* Debug */,
+				7A68155325BD9B5C00A9063D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A68155525BD9B5C00A9063D /* Build configuration list for PBXNativeTarget "BogusApp-WatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A68155625BD9B5C00A9063D /* Debug */,
+				7A68155725BD9B5C00A9063D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7A68152125BD9B5A00A9063D /* Project object */;
+}
