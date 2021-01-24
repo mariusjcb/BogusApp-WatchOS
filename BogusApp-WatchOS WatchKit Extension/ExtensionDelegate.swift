@@ -6,11 +6,16 @@
 //
 
 import WatchKit
+import BogusApp_Features_TargetsList
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
 
+    let appDIContainer = AppDIContainer()
+    var appFlowCoordinator: AppFlowCoordinator?
+    
     func applicationDidFinishLaunching() {
-        // Perform any final initialization of your application.
+        appFlowCoordinator = AppFlowCoordinator(appDIContainer: appDIContainer)
+        appFlowCoordinator?.start()
     }
 
     func applicationDidBecomeActive() {
